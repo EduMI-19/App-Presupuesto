@@ -1,27 +1,34 @@
-# PresupuestoApp
+# Aplicación de Presupuesto
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.8.
+La aplicación de Presupuesto, desarrollada con Angular, te permite calcular y administrar tu presupuesto personal. Con esta herramienta, puedes realizar un seguimiento de tus ingresos y egresos, y ver de manera clara cómo estos afectan tu presupuesto disponible.
 
-## Development server
+## Funcionalidades Principales
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Cálculo del Presupuesto Disponible:**
+  - Al ingresar a la aplicación, se visualiza el presupuesto disponible, el ingreso total, el egreso total y el porcentaje de egreso con respecto al ingreso total.
 
-## Code scaffolding
+- **Formulario y Listados:**
+  - La aplicación presenta un formulario que te permite registrar nuevos ingresos o egresos.
+  - Se muestran dos listados: uno para los ingresos y otro para los egresos.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Registro de Movimientos:**
+  - Para registrar un nuevo movimiento, completa el formulario proporcionando una descripción y el monto.
+  - Selecciona "+" si es un ingreso o "-" si es un egreso.
+  - Al presionar el botón de agregar, el movimiento se añadirá al listado correspondiente.
 
-## Build
+## Uso
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. **Inicio y Visualización del Presupuesto:**
+   - Al iniciar sesión, se mostrará el resumen del presupuesto disponible, ingresos, egresos y su porcentaje correspondiente.
 
-## Running unit tests
+2. **Registro de Movimientos:**
+   - Completa el formulario con una descripción y el monto del movimiento.
+   - Selecciona "+" si es un ingreso o "-" si es un egreso.
+   - Haz clic en el botón de agregar para añadir el movimiento al listado correspondiente.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+3. **Visualización de Listados:**
+   - Observa el listado de ingresos y egresos para tener un registro detallado de tus movimientos financieros.
 
-## Running end-to-end tests
+Con la aplicación de Presupuesto, puedes tener un control completo de tus finanzas personales, facilitando la toma de decisiones y la planificación financiera.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+¡Haz un seguimiento de tus ingresos y egresos de manera sencilla y eficiente con esta aplicación desarrollada en Angular!
