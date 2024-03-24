@@ -2,7 +2,7 @@
 
 - **Ingrese a la aplicacion:** 👉 [AppPresupuesto](https://app-presupuesto-4788c.web.app/)
 
-La aplicación de Presupuesto, desarrollada con Angular, te permite calcular y administrar tu presupuesto personal. Con esta herramienta, puedes realizar un seguimiento de tus ingresos y egresos, y ver de manera clara cómo estos afectan tu presupuesto disponible.
+  - La aplicación de Presupuesto, desarrollada con Angular, te permite calcular y administrar tu presupuesto personal. Con esta herramienta, puedes realizar un seguimiento de tus ingresos y egresos, y ver de manera clara cómo estos afectan tu presupuesto disponible.
 
 ## Funcionalidades Principales
 
