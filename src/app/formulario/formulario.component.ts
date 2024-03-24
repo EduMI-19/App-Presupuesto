@@ -32,5 +32,5 @@ export class FormularioComponent implements OnInit {
     }else{
       this.egresoServicio.egresos.push(new Egreso(this.descripcionInput, this.valorInput));
     }
-  }
+  } 
 }

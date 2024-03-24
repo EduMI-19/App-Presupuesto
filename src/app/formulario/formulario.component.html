@@ -1,27 +1,23 @@
-<form (ngSubmit)="f.form.valid && agregarValor()" #f="ngForm">
+<form (ngSubmit)="f.form.valid && agregarValor(); f.form.reset()" #f="ngForm">
   <div class="agregar">
-    <div class="agregar_contenedor">
-      <select (change)="tipoOperacion($event)" [ngClass]="{redfocus:tipo === 'egresoOperacion'}" class="agregar_tipo">
-        <option value="ingresoOperacion" selected>+</option>
-        <option value="egresoOperacion">-</option>
-      </select>
-      <input [ngClass]="{redfocus:tipo === 'egresoOperacion'}"
-        type="text"
-        class="agregar_descripcion"
-        placeholder="Agregar Descripción"
-        name="descripciónInput"
-        [(ngModel)]="descripcionInput" required
-      />
-      <input [ngClass]="{redfocus:tipo === 'egresoOperacion'}"
-      type="number" 
-      class="agregar_valor" 
-      placeholder="Valor" 
-      name="valorInput"
-      [(ngModel)]="valorInput" required
-      />
-      <button type="submit" class="agregar_btn">
-        <i [ngClass]="{red:tipo === 'egresoOperacion'}" class="bi bi-check-circle"></i>
-      </button>
-    </div>
+    <div class="agregar_contenedor row">
+      <div class="col-lg-6 col-md-6 col-sm-12 mb-2">
+        <div class="d-flex justify-content-center justify-content-md-end">
+          <select (change)="tipoOperacion($event)" [ngClass]="{redfocus:tipo === 'egresoOperacion'}" class="agregar_tipo">
+            <option value="ingresoOperacion" selected>+</option>
+            <option value="egresoOperacion">-</option>
+          </select>
+          <input [ngClass]="{redfocus:tipo === 'egresoOperacion'}" type="text" class="agregar_descripcion form-control-sm" placeholder="Agregar Descripción" name="descripcionInput" [(ngModel)]="descripcionInput" required />
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="d-flex justify-content-center justify-content-md-start">
+          <input [ngClass]="{redfocus:tipo === 'egresoOperacion'}" type="number" class="agregar_valor form-control-sm" placeholder="Valor" name="valorInput" [(ngModel)]="valorInput" required />
+          <button type="submit" class="agregar_btn">
+            <i [ngClass]="{red:tipo === 'egresoOperacion'}" class="bi bi-check-circle"></i>
+          </button>
+        </div>
+      </div>
+    </div>  
   </div>
 </form>
